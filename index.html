@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Bouncer Association of Meghalaya provides trained and professional bouncers and security personnel for events, concerts, movie shows, functions, weddings, festivals, VIP events and large crowd gatherings across Meghalaya.">
+<meta name="keywords" content="Bouncer Association of Meghalaya, Bouncers in Meghalaya, Bouncer services in Meghalaya, Event security Meghalaya, Security services Meghalaya, Professional bouncers Meghalaya, Crowd control Meghalaya, Crowd management Meghalaya, Event security services, Concert security Meghalaya, Wedding security Meghalaya, Function security Meghalaya, Movie show security Meghalaya, VIP security Meghalaya, Festival security Meghalaya, Trained security personnel Meghalaya, Large crowd security Meghalaya, Private security for events Meghalaya, Event bouncers Meghalaya, Security guards for events Meghalaya">
+<meta name="author" content="Bouncer Association of Meghalaya">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#111111">
+<link rel="canonical" href="__APP_URL__/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Bouncer Association of Meghalaya | Professional Event Security">
+<meta property="og:description" content="Professional bouncers and trained security personnel for events, concerts, functions, movie shows, weddings, VIP events and large gatherings across Meghalaya.">
+<meta property="og:site_name" content="Bouncer Association of Meghalaya">
+<meta property="og:image" content="__APP_URL__/assets/bam-logo.png">
+<meta property="og:url" content="__APP_URL__/">
+<title>Bouncer Association of Meghalaya | Professional Event Security Services</title>
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#000}
+body{font-family:Arial,Helvetica,sans-serif}
+#loader{position:fixed;inset:0;display:grid;place-items:center;background:#000;z-index:9999}
+.loader-inner{width:min(92vw,1100px);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:34px;padding:24px}
+.loader-logo{display:block;width:min(88vw,980px);height:auto;max-height:72vh;object-fit:contain;opacity:0;transform:scale(.965);filter:drop-shadow(0 0 0 rgba(227,6,19,0));animation:logoIn .75s cubic-bezier(.2,.8,.2,1) .08s forwards,logoPulse 1.8s ease-in-out .75s infinite alternate}
+.loader-status{width:min(320px,62vw);text-align:center;color:#aaa;font-size:8px;line-height:1;letter-spacing:.24em;text-transform:uppercase;opacity:0;animation:statusIn .5s ease 0.45s forwards}
+.loader-bar{width:100%;height:2px;margin-top:10px;background:rgba(255,255,255,.12);border-radius:9px;overflow:hidden}
+.loader-bar i{display:block;width:0;height:100%;background:linear-gradient(90deg,#fff,#ef1720,#fff);box-shadow:0 0 12px #e51a22;animation:loadBar 2.5s linear forwards}
+@keyframes logoIn{to{opacity:1;transform:scale(1)}}
+@keyframes logoPulse{from{filter:drop-shadow(0 0 0 rgba(227,6,19,0))}to{filter:drop-shadow(0 0 18px rgba(227,6,19,.18))}}
+@keyframes statusIn{to{opacity:.72}}
+@keyframes loadBar{to{width:100%}}
+@media (max-width:600px){.loader-inner{gap:26px}.loader-logo{width:94vw;max-height:62vh}.loader-status{font-size:7px;width:58vw}}
+@media (prefers-reduced-motion:reduce){.loader-logo{animation:logoIn .2s ease forwards}.loader-status{animation:statusIn .2s ease forwards}.loader-bar i{animation:none;width:100%}}
+</style>
+<script>
+// Public website is not a PWA. Remove only the root-scope public service worker;
+// never touch the separate /admin/ PWA registration.
+if('serviceWorker' in navigator){window.addEventListener('load',async()=>{try{const regs=await navigator.serviceWorker.getRegistrations();for(const reg of regs){if(reg.scope===location.origin+'/' || reg.scope===location.href.replace(/index\.html$/,'')){await reg.unregister();}}}catch(e){}});}
+</script>
+</head>
+<body>
+<div id="loader" aria-label="Loading BAM Security">
+  <div class="loader-inner">
+    <img class="loader-logo" id="loaderLogo" src="./assets/bam-logo-night.png" alt="Bouncers Association of Meghalaya">
+    <div class="loader-status">SECURE CHANNEL INITIALIZING<div class="loader-bar"><i></i></div></div>
+  </div>
+</div>
+<script>
+const DURATION=2500;
+const go=()=>window.location.replace('./home.html');
+setTimeout(go,DURATION);
+</script>
+</body>
+</html>
