@@ -1,7 +1,8 @@
 (function(){
   const esc=(v)=>String(v??'');
+  const escHTML=(v)=>String(v??'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
   const setText=(sel,key,c)=>{const el=document.querySelector(sel);if(el&&c[key]!==undefined)el.textContent=esc(c[key]);};
-  const setHTML=(sel,key,c)=>{const el=document.querySelector(sel);if(el&&c[key]!==undefined)el.innerHTML=esc(c[key]).replace(/\n/g,'<br>');};
+  const setHTML=(sel,key,c)=>{const el=document.querySelector(sel);if(el&&c[key]!==undefined)el.innerHTML=escHTML(c[key]).replace(/\n/g,'<br>');};
   const setSrc=(sel,key,c)=>{const el=document.querySelector(sel);if(el&&c[key])el.src=c[key];};
   const setHref=(sel,key,c,fn)=>{const el=document.querySelector(sel);if(el&&c[key])el.href=fn?fn(c[key]):c[key];};
   function applyColors(c){
